@@ -19,15 +19,11 @@ Database - MongoDB (NoSQL)
 Deployment - Docker                  
 
 System Architecture:
-```
-Client (ReactJS)
-   ⬇ WebSocket
-Backend API (Spring Boot)
-   ⬇ Kafka Producer
-Kafka Topic (Chat)
-   ⬇ Kafka Consumer
+Client (ReactJS) -> WebSocket
+Backend API (Spring Boot) -> Kafka Producer
+Kafka Topic (Chat) -> Kafka Consumer
 Backend Broadcast → WebSocket → Client(s)
-```
+
 Messages are serialized and published to a Kafka topic.
 Kafka ensures replication, fault tolerance, and ordering.
 Backend consumes and forwards the messages to appropriate WebSocket clients.
@@ -45,10 +41,10 @@ Execution Steps:
 - Start Frontend (React)
 - Open the integrated terminal inside the `/src` folder of the ReactJS project.
 - Run:
-  ```bash
+  bash
   npm install  # First time only
   npm start
-  ```
+  
   
 Team Contribution:
 Yashashwini Devineni - Project Lead,Backend    
