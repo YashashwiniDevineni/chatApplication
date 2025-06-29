@@ -37,9 +37,9 @@ Execution Steps:
   MongoDB  
 - Start Backend (Spring Boot)  
 - Navigate to the Spring Boot directory.  
-- Run the backend application (`ChatApplication.java`) via your IDE or terminal.  
+- Run the backend application (ChatApplication.java) via your IDE or terminal.  
 - Start Frontend (React)  
-- Open the integrated terminal inside the `/src` folder of the ReactJS project.  
+- Open the integrated terminal inside the "/src" folder of the ReactJS project.  
 - Run:  
   bash  
   npm install  # First time only  
